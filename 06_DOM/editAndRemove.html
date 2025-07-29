@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit and remove element in dom</title>
+</head>
+
+<body style="background-color: #212121;color: white;">
+    <ul class="language">
+        <li>javascript</li>
+        <li>python</li>
+        <li>cpp</li>
+    </ul>
+</body>
+<script>
+
+    function addLanguage(newLanguage) {
+        let newLi = document.createElement('li'); // creating a tag
+        newLi.textContent = `${newLanguage}` // giving text values to that tag
+        document.querySelector('.language').appendChild(newLi) // attaching that tag to its parent tag unordered list
+
+    }
+    addLanguage('Core java');
+
+    // addLanguage('arunsinfh');
+
+    // === optimised way====
+    function optiAddLang(something) {
+        let div = document.createElement('div')
+        div.appendChild(document.createTextNode(something))
+        document.querySelector('.language').appendChild(div)
+
+    }
+
+    // optiAddLang('something optimised')
+    // Edit values
+    let secondLang = document.querySelector('li:nth-child(2)') // ftech second child
+    // secondLang.style.color="blue"
+    const updatedList = document.createElement('li') // create a new element to replace with second child
+    // let textOne = document.createTextNode("yoitstimenow")
+    // updatedList.appendChild(textOne)// added text inside that element
+    // secondLang.replaceWith(updatedList)
+    updatedList.textContent = "somethingcrazy"
+    secondLang.replaceWith(updatedList)
+
+    // edit
+    const firstLang = document.querySelector('li:first-Child')
+    // console.log(firstLang)
+    firstLang.outerHTML = '<li>this is me</li>' // chnaged the value in realtime
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    console.log(lastLang)
+    lastLang.remove()
+
+
+</script>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code </title>
+</head>
+
+<body style="background-color: black;color: rgb(0, 0, 0);">
+
+</body>
+<script>
+    const div = document.createElement("div")
+    console.log(div);
+    div.className = "classisyou"
+    div.id = Math.round(Math.random()) + 1
+    div.setAttribute('title', 'arunsingh')
+    div.style.backgroundColor = 'white'
+    div.style.padding = '12px'
+    div.innerText = 'somethingInTHis'
+    // div.document.createTextNode("aurnsinghaaaa")
+    let text = document.createTextNode('chai aur coffee')
+    div.appendChild(text)
+
+    // attach to body
+    document.body.appendChild(div)
+
+</script>
+
+</html>

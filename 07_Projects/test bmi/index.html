@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>test BMI</title>
+</head>
+
+<body>
+    <h1 class="heading">BMI INDEX</h1>
+    <nav><button class="home" ><a href="index.html">home</a></button></nav>
+<form action="">
+    <label for="" class="height" id="LabelH">Enter Height</label><input type="text" id="inputH" placeholder="enter height in cm"><br>
+    <label for="" class="weight" id="labelW">Enter Weight </label><input type="text" id="inputW" placeholder="enter weight in Kg"><br>
+    <button id="submit">calculate</button>
+    <div class="information">
+        <h2 class="result"></h2>
+        <h2 class="guide" id="guideTitle">BMI GUIDE</h2>
+        <p class="guide" id="underW">under weight : bmi value less than 18</p>
+        <p class="guide" id="overW">over weight : bmi value greater than 25</p>
+        <p class="guide" id="fit">fully fit : bmi value is 18-25</p>
+    </div>
+</form>
+</body>
+<script src="script.js"></script>
+
+</html>

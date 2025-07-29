@@ -1,0 +1,21 @@
+body{
+    justify-content: center;
+    text-align: center;
+    background: #212121;
+    color: white;
+    margin: 200px;
+}
+.clock{
+    height: 90px;
+    width: 200px;
+    background: orange;
+    display: flexbox;
+    margin-left: 40%;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.banner{
+    text-transform: uppercase;
+    /* text: bold; */
+
+}

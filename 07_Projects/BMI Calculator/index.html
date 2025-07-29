@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI calculator</title>
+</head>
+
+<body>
+
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <!-- <a href="index.html">Home</a> -->
+    </nav>
+    <h1>BMI Index Calculator</h1>
+    <form>
+        <label for="height" class='height' id="labelH">Height in Cm : </label><input type="text" class='height'
+            id="inputH" placeholder="Enter height in cm">
+
+
+        <label for="weight" class="weight" id="labelW">Weight in kg : </label><input type="text" class="weight"
+            id="inputW" placeholder="Enter weight in Kg">
+
+
+        <button class="button" id="calBt">Calculate</button>
+    </form>
+    <div class="info">
+        <h2 class="info" id="h2">BMI Weight Guide</h2>
+        <center>
+            <h2 class="result" style="font-family: Arial, Helvetica, sans-serif; text-decoration: none;"></h2>
+        </center>
+        <p class="info" id="underW">Under Weight : Less Than 18 </p>
+        <p class="info" id="overW">Over Weight : More Than 25 </p>
+        <p class="info" id="NormalW">Normal Weight : 18 - 25 </p>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
