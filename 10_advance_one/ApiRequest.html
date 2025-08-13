@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    0 unsend
+    1 opened
+    2 headers recieved
+    3 loaders
+    4 doneimg
+    <!-- <img src="" alt="" style="width: ;"> -->
+
+</body>
+<script>
+    let requestURL = 'https://jsonplaceholder.typicode.com/todos/1'
+    let xhr = new XMLHttpRequest()
+    xhr.open('GET', requestURL)
+    // to continious state check
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState)
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console.log(data.id)
+            console.log(typeof data)
+        }
+    }
+    xhr.send()
+    document.body.innerHTML = '<img src="https://images.pexels.com/photos/7429193/pexels-photo-7429193.jpeg" style="height:200px; width:200px">'
+</script>
+
+</html>

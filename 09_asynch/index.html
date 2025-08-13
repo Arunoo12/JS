@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>async practice </h1>
+    <button id="stop">STOP</button>
+    <button id="clear">clear</button>
+</body>
+<script>
+    const displayArun = function () {
+        console.log("arunsigh")
+    }
+    const changeText = () => {
+        document.querySelector('h1').innerHTML = "best js series"
+    }
+    // setTimeout(displayArun, 2000)
+    let changedText = setTimeout(changeText, 2000)
+    // document.querySelector('h1').innerHTML="best js series"
+    document.querySelector('#stop').addEventListener('click', (e) => {
+        clearTimeout(changedText)
+        console.log('stopped')
+    }, false)
+    document.querySelector('#clear').addEventListener('click', function () {
+        clearTimeout(changedText)
+        document.querySelector('h1').innerHTML = 'async practice'
+
+    }, false)
+
+
+
+</script>
+
+</html>

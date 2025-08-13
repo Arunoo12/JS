@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>async practice </h1>
+    <button id="stop">STOP</button>
+    <button id="start">start</button>
+</body>
+<script>
+    // let intervalId = null;
+    let intervalstart = 0
+    let someFn = function () {
+         intervalstart = setInterval(function () {
+            // console.log('start clicked')
+            let date = new Date();
+            console.log(date.toLocaleTimeString());
+        }, 1000)
+    }
+    // let startTime = function () {
+    //     if (intervalId === null) {
+    //     }
+    // }
+    let stopTime = function () {
+        console.log('stop clicked')
+        clearInterval(intervalstart)
+        intervalstart = 0
+
+    }
+    // let intervalId = null;
+    // let startTime = function () {
+    //     if (intervalId === null) {
+    //         intervalId = setInterval(function () {
+    //             console.log('start clicked')
+    //             let date = new Date();
+    //             console.log(date.toLocaleTimeString());
+    //         }, 1000)
+    //     }
+    // }
+    // let stopTime = function () {
+    //     console.log('stop clicked')
+    //     clearInterval(intervalId)
+    //     intervalId = null
+
+    // }
+
+    document.querySelector('#start').addEventListener('click', someFn)
+    document.querySelector('#stop').addEventListener('click', stopTime)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // // let startDisplay = setInterval(() => {
+    // //     let date = new Date();
+    // //     // console.log("time display started ")
+    // //     console.log(`Current Time ${date.toLocaleTimeString()}`)
+    // // }, 1111000)
+    // // let startDisplay = () => {
+    // //     setInterval(() => {
+    // //         let date = new Date();
+    // //         // console.log("time display started ")
+    // //         console.log(`Current Time ${date.toLocaleTimeString()}`)
+    // //     }, 1000)
+
+    // let stop = function () {
+    //     setInterval(() => {
+    //         let date = new Date();
+    //         console.log(date.toLocaleTimeString())
+    //     }, 1000)
+    // }
+    // document.querySelector('#start').addEventListener
+    //     ('click', () => {
+    //         // startDisplay()
+    //         // startDisplay();
+    //         stop()
+    //         // console.log(stop)
+    //         // console.log(date.toLocaleTimeString())
+    //     }, false)
+    // document.querySelector('#stop').addEventListener('click', () => { clearInterval(stop) }, false)
+
+
+</script>
+
+</html>

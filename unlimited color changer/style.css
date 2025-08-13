@@ -1,0 +1,28 @@
+h1{
+    color: white;
+    display: flexbox;
+    flex-direction: row;
+    height: 20vh;
+    text-shadow:10px 6px 6px  rgb(255, 251, 0);
+    margin-left: 34%;
+}
+body{
+    background-color: #212121;
+}
+button{
+    color: #ffffff;
+    background-color: #212121;
+    box-shadow: 0px 0px 8px rgb(255, 225, 0);
+    align-items: center;
+    /* margin: 0; */
+    /* align-content: center; */
+    display: flex;
+    justify-content: center;
+    /* gap: 0px; */
+    margin-bottom: 20px;
+    height: 100px;
+    width:  100px;
+        margin-left: 50%;
+
+    
+}
